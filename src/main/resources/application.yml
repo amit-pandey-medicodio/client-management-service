@@ -1,0 +1,15 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://medicodio-api-db.postgres.database.azure.com:5432/api-integration
+    username: Medicodio_Admin
+    password: R@gsapple0624
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    hibernate:
+      ddl-auto: update
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "health"
